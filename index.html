@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    
+    <script src="p5.play.js"></script>
+    
+<!-- O SDK JS do Firebase principal é sempre necessário e deve ser listado primeiro -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+<!-- FAZER: Adicionar SDKs para produtos Firebase que você deseja usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+ // Configuração do Firebase do seu aplicativo da web
+  var firebaseConfig = {
+    apiKey: "AIzaSyCKu8c7vewohdOJgBAIEpmAaZ13e6aNcSg",
+    authDomain: "p35balloon.firebaseapp.com",
+    projectId: "p35balloon",
+    storageBucket: "p35balloon.appspot.com",
+    messagingSenderId: "354739504889",
+    appId: "1:354739504889:web:53955ece12c9284bb84428"
+  };
+  // Inicializar Firebase
+ // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDq7-YcrLLceFIqxUkL-q4snF1Um9EVmr8",
+  authDomain: "baloes-quentes.firebaseapp.com",
+  projectId: "baloes-quentes",
+  storageBucket: "baloes-quentes.appspot.com",
+  messagingSenderId: "755985328293",
+  appId: "1:755985328293:web:6dccea0e7511fd3358c54c"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
